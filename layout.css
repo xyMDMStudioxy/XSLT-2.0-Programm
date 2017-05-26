@@ -1,0 +1,231 @@
+/********************************/
+/* 		Allgemeine Styles        /
+/********************************/
+
+body, html {
+	margin: 0;
+	padding: 0;
+	background-color: #1B1D1E;
+}
+
+p {
+	font-size: 22px;
+}
+
+/********************************/
+/* 		Inhaltsverzeichnis       /
+/********************************/
+
+h1 {
+	text-align: center;
+	margin: 2% 0 5% 3%;
+	text-decoration: underline;
+	font-size: 54px;
+	color: #fff;
+}
+
+nav ul li {
+	text-align: center;
+	margin-top: 2%;
+	list-style: none;
+	font-size: 18px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+nav ul li a:hover {
+	font-size: 20px;
+	color: #bbb;
+}
+
+/********************************/
+/* 			CD - Seiten          /
+/********************************/
+
+h2 {
+	text-align: center;
+	margin: 2% 0 5% 3%;
+	text-decoration: underline;
+	font-size: 36px;
+	color: #fff;
+}
+
+#interpret {
+	position: absolute;
+	margin: 5% 0 0 70%;
+	color: #fff;
+}
+
+#interpret ul li {
+	margin-top: 2%;
+	list-style: none;
+}
+
+#interpret ul li a {
+	color: #bbb;
+}
+
+#interpret ul li a:hover {
+	font-size: 18px;
+}
+
+#tracks {
+	position: absolute;
+	margin: 5% 0 0 5%;
+	color: #fff;
+}
+
+#tracks ul li {
+	margin-top: 2%;
+	list-style: none;
+}
+
+#tracks ul li a {
+	color: #bbb;
+}
+
+#tracks ul li a:hover {
+	font-size: 18px;
+}
+
+	/********************************/
+	/* 			 Button Vor          /
+	/********************************/
+
+	.vor::before {
+		-moz-transition: 700ms all ease-in-out;
+		-ms-transition: 700ms all ease-in-out;
+		-o-transition: 700ms all ease-in-out;
+		-webkit-transition: 700ms all ease-in-out;
+		transition: 700ms all ease-in-out;
+	}
+
+	.vor {
+		margin-bottom: 5%;
+		margin-left: 80%;
+		padding: 15px 25px 15px 25px;
+		text-align: center;
+		font-size: 16px;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		position: absolute;
+		background: #000;
+		z-index: 2;
+		display: block;
+		width: 150px;
+		border-right: 5px solid #ff6600;
+		border-left: 5px solid #ff6600;
+	}
+
+	.vor::before {
+		z-index: -1;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 100%;
+		bottom: 0;
+		background: #ff6600;
+	}
+
+	.vor:hover:before {
+		left: 0;
+		right: 0;
+	}
+
+	/********************************/
+	/* 		   Button Zurück         /
+	/********************************/
+
+	.zurueck::before {
+		-moz-transition: 700ms all ease-in-out;
+		-ms-transition: 700ms all ease-in-out;
+		-o-transition: 700ms all ease-in-out;
+		-webkit-transition: 700ms all ease-in-out;
+		transition: 700ms all ease-in-out;
+	}
+
+	.zurueck {
+		margin: 0 0 0 5%;
+		padding: 15px 25px 15px 25px;
+		text-align: center;
+		font-size: 16px;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		position: absolute;
+		background: #000;
+		z-index: 2;
+		display: block;
+		width: 150px;
+		border-right: 5px solid #ff6600;
+		border-left: 5px solid #ff6600;
+	}
+
+	.zurueck::before {
+		z-index: -1;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 100%;
+		right: 0;
+		bottom: 0;
+		background: #ff6600;
+	}
+
+	.zurueck:hover:before {
+		left: 0;
+		right: 0;
+	}
+
+	/********************************/
+	/*   Button Inhaltsverzeichnis   /
+	/********************************/
+
+	#inhalt::before {
+		-moz-transition: 500ms all ease-in-out;
+		-ms-transition: 500ms all ease-in-out;
+		-o-transition: 500ms all ease-in-out;
+		-webkit-transition: 500ms all ease-in-out;
+		transition: 500ms all ease-in-out;
+	}
+
+	#inhalt {
+		margin-bottom: 5%;
+		margin-left: 40%;
+		padding: 15px 25px 15px 25px;
+		text-align: center;
+		font-size: 16px;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		position: absolute;
+		background: #000;
+		z-index: 2;
+		display: block;
+		width: 240px;
+		border-right: 5px solid #ff6600;
+		border-left: 5px solid #ff6600;
+	}
+
+	#inhalt::before {
+		z-index: -1;
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 100%;
+		background: #ff6600;
+	}
+
+	#inhalt:hover:before {
+		bottom: 0;
+	}
